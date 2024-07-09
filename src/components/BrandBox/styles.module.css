@@ -1,0 +1,24 @@
+.box {
+  width: 4.625rem;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color-bg-1);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--shadow-component);
+}
+
+.wrapper {
+  height: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .box {
+    width: 7.5rem;
+    border-radius: 1.5rem;
+  }
+  .wrapper {
+    height: 4.25rem;
+  }
+}

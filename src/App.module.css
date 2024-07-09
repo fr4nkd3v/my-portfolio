@@ -1,0 +1,6 @@
+.layout {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 2.25rem;
+  padding: 5rem 3.75rem;
+}
