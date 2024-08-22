@@ -1,0 +1,38 @@
+.button-root {
+  --height: 50px;
+  height: var(--height);
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-12);
+  padding: 6px;
+  position: relative;
+
+  background-color: var(--color-themeToggleButton);
+  border-radius: calc(var(--height) / 2);
+  border: 0 none #000;
+
+  cursor: pointer;
+}
+
+.indicator {
+  width: 38px;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  left: 0;
+
+  border-radius: 50%;
+  background-image:
+  linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)),
+    linear-gradient(var(--color-themeToggleButton), var(--color-themeToggleButton));
+  transition: transform .2s;
+  transition-timing-function: ease;
+}
+
+.indicator.light {
+  transform: translateX(6px);
+}
+.indicator.dark {
+  transform: translateX(calc(100px - 6px - 38px));
+}

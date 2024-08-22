@@ -10,7 +10,7 @@ export const FullStackIcon = (props: IconProps) => {
     >
       <path
         d="M4 12L12 16L20 12M4 16L12 20L20 16M12 4L4 8L12 12L20 8L12 4Z"
-        stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round"
+        stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round"
       />
     </svg>
   )

@@ -1,11 +1,30 @@
 import { ReactElement } from 'react';
 import css from './styles.module.css';
+import ThemeToggleButton from '../ThemeToggleButton/ThemeToggleButton';
 
-export default function Menu() {
+// Component MenuItem
+
+interface MenuItemProps {
+  name: string;
+  children: string | ReactElement;
+}
+
+const MenuItem = ({ name, children }: MenuItemProps) => {
+  return (
+    <li className={css.item}>
+      <span className={css['item-name']}># {name}</span>
+      {children}
+    </li>
+  )
+}
+
+// Component Menu
+
+const Menu = () => {
   return (
     <ul className={css.menu}>
       <MenuItem name='Theme'>
-        <button>Representa el toogle button</button>
+        <ThemeToggleButton />
       </MenuItem>
       <MenuItem name='Language'>
         <select>
@@ -18,18 +37,4 @@ export default function Menu() {
   )
 }
 
-/* Component MenuItem */
-
-interface MenuItemProps {
-  name: string;
-  children: string | ReactElement;
-}
-
-function MenuItem({ name, children }: MenuItemProps) {
-  return (
-    <li className={css.item}>
-      <span className={css['item-name']}># {name}</span>
-      {children}
-    </li>
-  )
-}
+export default Menu;

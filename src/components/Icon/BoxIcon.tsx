@@ -10,7 +10,7 @@ export const BoxIcon = (props: IconProps) => {
     >
       <path
         d="M20 7.5L12 3L4 7.5M20 7.5V16.5L12 21M20 7.5L12 12M12 21L4 16.5V7.5M12 21V12M4 7.5L12 12"
-        stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round"
+        stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round"
       />
     </svg>
   )

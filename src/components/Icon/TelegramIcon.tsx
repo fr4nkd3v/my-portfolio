@@ -10,7 +10,7 @@ export const TelegramIcon = (props: IconProps) => {
     >
       <path
         d="M15 10L11 14L17 20L21 4L3 11L7 13L9 19L12 15"
-        stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round"
+        stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round"
       />
     </svg>
   )

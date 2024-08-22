@@ -1,12 +1,14 @@
-import Fr4nkd3v from '~/components/Logo/Fr4nkd3v';
+import { Fr4nkd3vLogo } from '~/components/Logo/Fr4nkd3vLogo';
 import css from './styles.module.css'
 
-export default function BrandBox() {
+const BrandBox = () => {
   return (
     <div className={css.box}>
       <div className={css.wrapper}>
-        <Fr4nkd3v styles={{height: '100%'}} />
+        <Fr4nkd3vLogo styles={{height: '100%'}} />
       </div>
     </div>
   )
 }
+
+export default BrandBox;
