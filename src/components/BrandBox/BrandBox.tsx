@@ -1,7 +1,7 @@
 import { Fr4nkd3vLogo } from '~/components/Logo/Fr4nkd3vLogo';
-import css from './styles.module.css'
+import css from './BrandBox.module.css'
 
-const BrandBox = () => {
+export const BrandBox = () => {
   return (
     <div className={css.box}>
       <div className={css.wrapper}>
@@ -10,5 +10,3 @@ const BrandBox = () => {
     </div>
   )
 }
-
-export default BrandBox;

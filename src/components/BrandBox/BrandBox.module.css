@@ -2,7 +2,7 @@
   width: 4.625rem;
   aspect-ratio: 1 / 1;
   background-color: var(--theme-color-bg-1);
-  border-radius: 1rem;
+  border-radius: var(--radius-sm);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,10 +15,10 @@
 
 @media (min-width: 768px) {
   .box {
-    width: 7.5rem;
-    border-radius: 1.5rem;
+    width: var(--header-element-height);
+    border-radius: var(--radius-lg);
   }
   .wrapper {
-    height: 4.25rem;
+    height: var(--size-52);
   }
 }

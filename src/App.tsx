@@ -1,11 +1,8 @@
-import BrandBox from '~/components/BrandBox/index';
+import { BrandBox } from '~/components/BrandBox/BrandBox';
 import { Menu } from '~/components/Menu/Menu';
 import css from './App.module.css';
-// import { ThemeTypes } from './types';
 
 function App() {
-  // const [ theme, setTheme] = useState<ThemeTypes>('light');
-
   return (
     <div className={css.layout}>
       <BrandBox />
