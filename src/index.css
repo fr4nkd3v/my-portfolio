@@ -137,13 +137,14 @@
 /* ================= Design System ================= */
 
 .light-theme {
+  /* General */
+
   --theme-color-primary-high: var(--light-color-primary-high);
   --theme-color-primary-base: var(--light-color-primary-base);
   --theme-color-primary-medium: var(--light-color-primary-medium);
   --theme-color-primary-low-1: var(--light-color-primary-low-1);
   --theme-color-primary-low-2: var(--light-color-primary-low-2);
 
-  --theme-color-themeToggleButton: var(--light-color-themeToggleButton);
   --theme-color-bg-1: var(--light-color-bg-1);
   --theme-color-bg-2: var(--light-color-bg-2);
 
@@ -153,16 +154,22 @@
   --theme-color-text-contrasted: var(--light-color-text-contrasted);
 
   --theme-shadow-component: var(--light-shadow-component);
+
+  /* Custom */
+
+  --theme-color-themeToggleButton: var(--light-color-themeToggleButton);
+  --theme-logo-color-contrasted: var(--gray-4);
 }
 
 .dark-theme {
+  /* General */
+
   --theme-color-primary-high: var(--dark-color-primary-high);
   --theme-color-primary-base: var(--dark-color-primary-base);
   --theme-color-primary-medium: var(--dark-color-primary-medium);
   --theme-color-primary-low-1: var(--dark-color-primary-low-1);
   --theme-color-primary-low-2: var(--dark-color-primary-low-2);
 
-  --theme-color-themeToggleButton: var(--dark-color-themeToggleButton);
   --theme-color-bg-1: var(--dark-color-bg-1);
   --theme-color-bg-2: var(--dark-color-bg-2);
 
@@ -172,6 +179,11 @@
   --theme-color-text-contrasted: var(--dark-color-text-contrasted);
 
   --theme-shadow-component: var(--dark-shadow-component);
+
+  /* Custom */
+
+  --theme-color-themeToggleButton: var(--dark-color-themeToggleButton);
+  --theme-logo-color-contrasted: var(--white);
 }
 
 /* Start */

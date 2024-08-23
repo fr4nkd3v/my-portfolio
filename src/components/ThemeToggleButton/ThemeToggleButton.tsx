@@ -18,7 +18,6 @@ const ThemeToggleButton = () => {
     event.stopPropagation();
     setTheme(newTheme);
     setAppTheme(newTheme);
-    console.log('click in ThemeToggleButton');
   }
 
   return (
