@@ -1,0 +1,12 @@
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-12);
+}
+
+.item-name {
+  color: var(--theme-color-text-base);
+  font-size: var(--size-18);
+  font-weight: var(--font-weight-medium);
+}

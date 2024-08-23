@@ -1,38 +1,46 @@
 .button-root {
-  --height: 50px;
-  height: var(--height);
-  width: 100px;
+  --theme-toggle-button-height: 42px;
+  --theme-toggle-button-width: 82px;
+  height: var(--theme-toggle-button-height);
+  width: var(--theme-toggle-button-width);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: var(--size-12);
-  padding: 6px;
+  gap: var(--size-14);
+  padding: 0 var(--size-8);
   position: relative;
 
-  background-color: var(--color-themeToggleButton);
-  border-radius: calc(var(--height) / 2);
+  background-color: var(--theme-color-themeToggleButton);
+  border-radius: calc(var(--theme-toggle-button-height) / 2);
   border: 0 none #000;
 
   cursor: pointer;
 }
 
 .indicator {
-  width: 38px;
+  --indicator-width: var(--size-30);
+  --x-margin: 6px;
+  width: var(--indicator-width);
   aspect-ratio: 1 / 1;
   position: absolute;
   left: 0;
 
   border-radius: 50%;
   background-image:
-  linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)),
-    linear-gradient(var(--color-themeToggleButton), var(--color-themeToggleButton));
+    linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)),
+    linear-gradient(var(--theme-color-themeToggleButton), var(--theme-color-themeToggleButton));
   transition: transform .2s;
   transition-timing-function: ease;
 }
 
 .indicator.light {
-  transform: translateX(6px);
+  transform: translateX(var(--x-margin));
 }
 .indicator.dark {
-  transform: translateX(calc(100px - 6px - 38px));
+  transform: translateX(calc(var(--theme-toggle-button-width) - var(--indicator-width) - var(--x-margin)));
+}
+
+.icon-wrapper {
+  width: var(--size-26);
+  height: var(--size-26);
 }

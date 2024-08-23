@@ -1,12 +1,12 @@
 .box {
   width: 4.625rem;
   aspect-ratio: 1 / 1;
-  background-color: var(--color-bg-1);
+  background-color: var(--theme-color-bg-1);
   border-radius: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: var(--shadow-component);
+  box-shadow: var(--theme-shadow-component);
 }
 
 .wrapper {

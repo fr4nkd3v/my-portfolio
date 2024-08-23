@@ -1,5 +1,5 @@
 export interface IconProps {
-  pixelSize?: number;
+  pixelSize?: number | '100%';
   color?: string;
   strokeWidth?: number;
 }
@@ -20,8 +20,8 @@ export function parseIconProps(
     color,
     strokeWidth: strokeWidth.toString(),
     styles: {
-      width: `${pixelSize}px`,
-      height: `${pixelSize}px`,
+      width: pixelSize === '100%' ? pixelSize : `${pixelSize}px`,
+      height: pixelSize === '100%' ? pixelSize : `${pixelSize}px`,
     }
   };
 }

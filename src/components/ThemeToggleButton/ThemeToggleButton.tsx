@@ -22,9 +22,13 @@ const ThemeToggleButton = () => {
   }
 
   return (
-    <button className={css['button-root']} onClick={handleClick} >
-      <MoonIcon pixelSize={32} />
-      <SunIcon pixelSize={32} />
+    <button className={css['button-root']} onClick={handleClick}>
+      <div className={css['icon-wrapper']}>
+        <MoonIcon pixelSize='100%' />
+      </div>
+      <div className={css['icon-wrapper']}>
+        <SunIcon pixelSize='100%' />
+      </div>
       <div className={`${css.indicator} ${css[theme]}`}></div>
     </button>
   )

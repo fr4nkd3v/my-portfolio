@@ -1,5 +1,5 @@
 import BrandBox from '~/components/BrandBox/index';
-import Menu from '~/components/Menu';
+import { Menu } from '~/components/Menu/Menu';
 import css from './App.module.css';
 // import { ThemeTypes } from './types';
 

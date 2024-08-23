@@ -1,0 +1,11 @@
+.menu {
+  grid-column: 2 / 4;
+  padding: 0 var(--size-48);
+  height: var(--header-element-height);
+  display: flex;
+  column-gap: var(--size-72);
+
+  background-color: var(--theme-color-bg-1);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--theme-shadow-component);
+}

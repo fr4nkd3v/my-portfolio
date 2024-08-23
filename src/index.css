@@ -59,8 +59,8 @@
   --dark-color-bg-1: var(--gray-5);
   --dark-color-bg-2: var(--gray-6);
 
-  --dark-color-text-low: var(--gray-18);
-  --dark-color-text-base: var(--gray-15);
+  --dark-color-text-low: var(--gray-15);
+  --dark-color-text-base: var(--gray-18);
   --dark-color-text-high: var(--white);
   --dark-color-text-contrasted: var(--gray-4);
 
@@ -70,7 +70,7 @@
 
   /* #region Variables */
 
-  --header-element-height: 7.5rem;
+  --header-element-height: 5.625rem;
 
   --font-weight-regular: 400;
   --font-weight-medium: 500;
@@ -78,13 +78,21 @@
   --font-weight-bold: 700;
   --font-weight-extrabold: 800;
 
+  --size-2: 0.125rem;
   --size-4: 0.25rem;
+  --size-6: 0.375rem;
   --size-8: 0.5rem;
+  --size-10: 0.625rem;
   --size-12: 0.75rem;
+  --size-14: 0.875rem;
   --size-16: 1rem;
+  --size-18: 1.125rem;
   --size-20: 1.25rem;
+  --size-22: 1.375rem;
   --size-24: 1.5rem;
+  --size-26: 1.625rem;
   --size-28: 1.75rem;
+  --size-30: 1.875rem;
   --size-32: 2rem;
   --size-36: 2.25rem;
   --size-40: 2.5rem;
@@ -97,27 +105,76 @@
   --size-88: 5.5rem;
   --size-96: 6rem;
 
+  --radius-n: 0px;
+  --radius-2xs: 2px;
+  --radius-1xs: 4px;
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-1xl: 40px;
+  --radius-2xl: 48px;
+  --radius-3xl: 56px;
+
   /* #endregion Variables */
 
-  font-family: 'Montserrat', system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* ================= Design System ================= */
+
+.light-theme {
+  --theme-color-primary-high: var(--light-color-primary-high);
+  --theme-color-primary-base: var(--light-color-primary-base);
+  --theme-color-primary-medium: var(--light-color-primary-medium);
+  --theme-color-primary-low-1: var(--light-color-primary-low-1);
+  --theme-color-primary-low-2: var(--light-color-primary-low-2);
+
+  --theme-color-themeToggleButton: var(--light-color-themeToggleButton);
+  --theme-color-bg-1: var(--light-color-bg-1);
+  --theme-color-bg-2: var(--light-color-bg-2);
+
+  --theme-color-text-low: var(--light-color-text-low);
+  --theme-color-text-base: var(--light-color-text-base);
+  --theme-color-text-high: var(--light-color-text-high);
+  --theme-color-text-contrasted: var(--light-color-text-contrasted);
+
+  --theme-shadow-component: var(--light-shadow-component);
+}
+
+.dark-theme {
+  --theme-color-primary-high: var(--dark-color-primary-high);
+  --theme-color-primary-base: var(--dark-color-primary-base);
+  --theme-color-primary-medium: var(--dark-color-primary-medium);
+  --theme-color-primary-low-1: var(--dark-color-primary-low-1);
+  --theme-color-primary-low-2: var(--dark-color-primary-low-2);
+
+  --theme-color-themeToggleButton: var(--dark-color-themeToggleButton);
+  --theme-color-bg-1: var(--dark-color-bg-1);
+  --theme-color-bg-2: var(--dark-color-bg-2);
+
+  --theme-color-text-low: var(--dark-color-text-low);
+  --theme-color-text-base: var(--dark-color-text-base);
+  --theme-color-text-high: var(--dark-color-text-high);
+  --theme-color-text-contrasted: var(--dark-color-text-contrasted);
+
+  --theme-shadow-component: var(--dark-shadow-component);
+}
+
+/* Start */
 
 body {
   margin: 0;
@@ -126,57 +183,10 @@ body {
   min-width: 320px;
   min-height: 100vh;
   width: 100%;
-}
 
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
-
-/* ================= LAYOUT STYLES ================= */
-
-.light-theme {
-  --color-primary-high: var(--light-color-primary-high);
-  --color-primary-base: var(--light-color-primary-base);
-  --color-primary-medium: var(--light-color-primary-medium);
-  --color-primary-low-1: var(--light-color-primary-low-1);
-  --color-primary-low-2: var(--light-color-primary-low-2);
-
-  --color-themeToggleButton: var(--light-color-themeToggleButton);
-  --color-bg-1: var(--light-color-bg-1);
-  --color-bg-2: var(--light-color-bg-2);
-
-  --color-text-low: var(--light-color-text-low);
-  --color-text-base: var(--light-color-text-base);
-  --color-text-high: var(--light-color-text-high);
-  --color-text-contrasted: var(--light-color-text-contrasted);
-
-  --shadow-component: var(--light-shadow-component);
-}
-
-.dark-theme {
-  --color-primary-high: var(--dark-color-primary-high);
-  --color-primary-base: var(--dark-color-primary-base);
-  --color-primary-medium: var(--dark-color-primary-medium);
-  --color-primary-low-1: var(--dark-color-primary-low-1);
-  --color-primary-low-2: var(--dark-color-primary-low-2);
-
-  --color-themeToggleButton: var(--dark-color-themeToggleButton);
-  --color-bg-1: var(--dark-color-bg-1);
-  --color-bg-2: var(--dark-color-bg-2);
-
-  --color-text-low: var(--dark-color-text-low);
-  --color-text-base: var(--dark-color-text-base);
-  --color-text-high: var(--dark-color-text-high);
-  --color-text-contrasted: var(--dark-color-text-contrasted);
-
-  --shadow-component: var(--dark-shadow-component);
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-family: 'Montserrat', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
 }
