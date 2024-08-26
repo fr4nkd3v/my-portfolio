@@ -2,6 +2,7 @@ import css from './Menu.module.css';
 import { ThemeToggleButton } from '../ThemeToggleButton/ThemeToggleButton';
 import { Dropdown } from '~/components/Dropdown';
 import { MenuItem } from './MenuItem';
+import { ExternalIcon } from '../Icon';
 
 const dropdownDataList = [
   {
@@ -25,7 +26,11 @@ export const Menu = () => {
           dataList={dropdownDataList}
         />
       </MenuItem>
-      <MenuItem name='Open CV'>Redirigir</MenuItem>
+      <MenuItem name='Open CV'>
+      <a href="#">
+        <ExternalIcon pixelSize={30} />
+      </a>
+      </MenuItem>
     </ul>
   )
 }

@@ -18,7 +18,7 @@
 }
 
 .Dropdown {
-  height: var(--size-48);
+  height: var(--size-40);
   padding-left: var(--Dropdown-x-padding);
   padding-right: calc(var(--Dropdown-icon-width) + var(--Dropdown-x-padding));
 
