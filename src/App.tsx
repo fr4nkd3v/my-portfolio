@@ -2,6 +2,8 @@ import css from './App.module.css';
 import { BrandBox } from '~/components/BrandBox/BrandBox';
 import { Menu } from '~/components/Menu/Menu';
 import { Navbar } from './components/Navbar';
+import { Socialbar } from './components/Socialbar';
+import { socialMediaLinks } from './constants';
 
 function App() {
   return (
@@ -16,7 +18,10 @@ function App() {
         <BrandBox />
         <Menu />
         <Navbar />
-        <h1>Welcome to my portfolio</h1>
+        <div>
+          <h1>Welcome to my portfolio</h1>
+        </div>
+        <Socialbar data={socialMediaLinks} />
       </div>
     </div>
   )

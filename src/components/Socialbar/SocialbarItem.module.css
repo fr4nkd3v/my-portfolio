@@ -1,0 +1,22 @@
+.SocialbarItem {
+  width: var(--size-52);
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--theme-color-bg-1);
+  color: var(--theme-color-text-bar);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color var(--timing-animation) ease;
+}
+
+.SocialbarItem:hover {
+  color: var(--theme-color-primary-base);
+}
+
+.SocialbarItem-link {
+  display: flex;
+  width: var(--size-32);
+}

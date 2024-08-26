@@ -29,7 +29,7 @@
   background-image:
     linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)),
     linear-gradient(var(--theme-color-themeToggleButton), var(--theme-color-themeToggleButton));
-  transition: transform .2s;
+  transition: transform var(--timing-animation);
   transition-timing-function: ease;
 }
 

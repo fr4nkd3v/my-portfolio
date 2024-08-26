@@ -9,6 +9,7 @@
   align-items: center;
   gap: var(--size-24);
 
+  color: var(--theme-color-text-bar);
   border-radius: var(--radius-lg);
   background-color: var(--theme-color-bg-1);
 }

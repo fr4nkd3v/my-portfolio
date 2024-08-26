@@ -5,12 +5,12 @@
   place-items: center;
 
   border-radius: var(--radius-md);
-  color: var(--gray-17);
   cursor: pointer;
+  transition: background-color var(--timing-animation) ease, color var(--timing-animation) ease;
 }
 
 .NavbarItem:hover {
-  background-color: var(--theme-color-primary-low-1);
+  background-color: var(--theme-color-primary-low-2);
   color: var(--theme-color-primary-base);
 }
 
