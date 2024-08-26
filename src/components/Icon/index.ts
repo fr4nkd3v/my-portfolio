@@ -5,6 +5,7 @@ export * from './Briefcase1Icon';
 export * from './Briefcase2Icon';
 export * from './CertificateIcon';
 export * from './CheckIcon';
+export * from './ChevronDownIcon';
 export * from './CopyIcon';
 export * from './DiscordIcon';
 export * from './ExternalIcon';

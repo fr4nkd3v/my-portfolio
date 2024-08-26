@@ -2,8 +2,10 @@
   grid-column: 2 / 4;
   padding: 0 var(--size-48);
   height: var(--header-element-height);
+  width: fit-content;
   display: flex;
   column-gap: var(--size-72);
+  justify-self: end;
 
   background-color: var(--theme-color-bg-1);
   border-radius: var(--radius-lg);

@@ -4,7 +4,7 @@ import { MoonIcon, SunIcon } from '~/components/Icon';
 import { type ThemeTypes } from '~/types';
 import { getSystemTheme, setAppTheme } from '~/utils';
 
-const ThemeToggleButton = () => {
+export const ThemeToggleButton = () => {
   const [ theme, setTheme] = useState<ThemeTypes>('light');
 
   useEffect(() => {
@@ -32,5 +32,3 @@ const ThemeToggleButton = () => {
     </button>
   )
 }
-
-export default ThemeToggleButton;

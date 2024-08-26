@@ -1,6 +1,18 @@
 import css from './Menu.module.css';
-import ThemeToggleButton from '../ThemeToggleButton/ThemeToggleButton';
+import { ThemeToggleButton } from '../ThemeToggleButton/ThemeToggleButton';
+import { Dropdown } from '~/components/Dropdown';
 import { MenuItem } from './MenuItem';
+
+const dropdownDataList = [
+  {
+    item: 'ENG',
+    value: 'eng'
+  },
+  {
+    item: 'SPA',
+    value: 'spa'
+  },
+];
 
 export const Menu = () => {
   return (
@@ -9,10 +21,9 @@ export const Menu = () => {
         <ThemeToggleButton />
       </MenuItem>
       <MenuItem name='Language'>
-        <select>
-          <option value="eng">ENG</option>
-          <option value="spa">SPA</option>
-        </select>
+        <Dropdown
+          dataList={dropdownDataList}
+        />
       </MenuItem>
       <MenuItem name='Open CV'>Redirigir</MenuItem>
     </ul>

@@ -1,0 +1,37 @@
+.Dropdown-root {
+  --Dropdown-icon-width: var(--size-24);
+  --Dropdown-x-padding: var(--size-12);
+  position: relative;
+  border-radius: var(--radius-xs);
+  border: solid 2px var(--theme-color-text-base);
+  overflow: hidden;
+}
+
+.Dropdown-icon {
+  display: flex;
+  width: var(--Dropdown-icon-width);
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  right: calc(var(--Dropdown-x-padding) / 2); top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.Dropdown {
+  height: var(--size-48);
+  padding-left: var(--Dropdown-x-padding);
+  padding-right: calc(var(--Dropdown-icon-width) + var(--Dropdown-x-padding));
+
+  font-family: inherit;
+  font-size: var(--size-16);
+  background-color: var(--theme-color-bg-1);
+  border: none;
+  outline: none;
+
+  appearance: none;
+}
+
+.Dropdown-item {
+  color: var(--theme-color-text-base);
+  font-size: var(--size-16);
+}

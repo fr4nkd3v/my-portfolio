@@ -44,6 +44,7 @@
   --light-color-text-contrasted: var(--white);
 
   --light-shadow-component: 0 4px 20px 0 rgba(25, 34, 35, .1);
+  --light-app-bg: linear-gradient(135deg, #00BCD41A, #65BEFF1A), #F1F3F4;
 
   /* #endregion Light */
 
@@ -65,6 +66,7 @@
   --dark-color-text-contrasted: var(--gray-4);
 
   --dark-shadow-component: 0 4px 20px 0 rgba(0, 0, 0, .15);
+  --dark-app-bg: linear-gradient(135deg, #00BCD44D, #65BEFF4D), #333D3F;
 
   /* #endregion Dark */
 
@@ -157,6 +159,7 @@
 
   /* Custom */
 
+  --theme-app-bg: var(--light-app-bg);
   --theme-color-themeToggleButton: var(--light-color-themeToggleButton);
   --theme-logo-color-contrasted: var(--gray-4);
 }
@@ -182,6 +185,7 @@
 
   /* Custom */
 
+  --theme-app-bg: var(--dark-app-bg);
   --theme-color-themeToggleButton: var(--dark-color-themeToggleButton);
   --theme-logo-color-contrasted: var(--white);
 }
@@ -189,16 +193,17 @@
 /* Start */
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  height: 100vh;
   width: 100%;
 
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
   font-family: 'Montserrat', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
 }
