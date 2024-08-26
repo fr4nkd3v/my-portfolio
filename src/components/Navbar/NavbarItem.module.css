@@ -1,0 +1,21 @@
+.NavbarItem {
+  width: var(--size-64);
+  aspect-ratio: 1 / 1;
+  display: grid;
+  place-items: center;
+
+  border-radius: var(--radius-md);
+  color: var(--gray-17);
+  cursor: pointer;
+}
+
+.NavbarItem:hover {
+  background-color: var(--theme-color-primary-low-1);
+  color: var(--theme-color-primary-base);
+}
+
+.NavbarItem-icon {
+  display: flex;
+  width: 64%;
+  aspect-ratio: 1 / 1;
+}
