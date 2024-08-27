@@ -10,7 +10,7 @@ export const Dropdown = ({ dataList }: IDropdownProps) => {
       </div>
       <select className={css.Dropdown}>
         {dataList.map(({ item, value }) => (
-          <option className={css['Dropdown-item']} value={value}>{item}</option>
+          <option className={css['Dropdown-item']} value={value} key={value}>{item}</option>
         ))}
       </select>
     </div>

@@ -18,15 +18,15 @@ const dropdownDataList = [
 export const Menu = () => {
   return (
     <ul className={css.menu}>
-      <MenuItem name='Theme'>
+      <MenuItem name='Theme' key='Theme'>
         <ThemeToggleButton />
       </MenuItem>
-      <MenuItem name='Language'>
+      <MenuItem name='Language' key='Language'>
         <Dropdown
           dataList={dropdownDataList}
         />
       </MenuItem>
-      <MenuItem name='Open CV'>
+      <MenuItem name='Open CV' key='Open CV'>
       <a href="#">
         <ExternalIcon pixelSize={30} />
       </a>

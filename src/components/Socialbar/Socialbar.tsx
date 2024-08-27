@@ -6,7 +6,7 @@ export const Socialbar = ({ data }: ISocialbarProps) => {
   return (
     <ul className={css['Socialbar']}>
       {data.map(({ socialMedia, link }) => (
-        <SocialbarItem type={socialMedia} link={link} />
+        <SocialbarItem type={socialMedia} link={link} key={socialMedia} />
       ))}
     </ul>
   )

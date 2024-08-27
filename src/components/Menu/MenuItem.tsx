@@ -1,12 +1,7 @@
-import { ReactElement } from "react";
 import css from './MenuItem.module.css';
+import type { IMenuItemProps } from './Menu.types';
 
-interface MenuItemProps {
-  name: string;
-  children: string | ReactElement;
-}
-
-export const MenuItem = ({ name, children }: MenuItemProps) => {
+export const MenuItem = ({ name, children }: IMenuItemProps) => {
   return (
     <li className={css.item}>
       <span className={css['item-name']}># {name}</span>
