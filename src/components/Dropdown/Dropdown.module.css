@@ -2,6 +2,8 @@
   --Dropdown-icon-width: var(--size-24);
   --Dropdown-x-padding: var(--size-12);
   position: relative;
+
+  color: var(--theme-color-text-base);
   border-radius: var(--radius-xs);
   border: solid 2px var(--theme-color-text-base);
   overflow: hidden;
@@ -22,8 +24,10 @@
   padding-left: var(--Dropdown-x-padding);
   padding-right: calc(var(--Dropdown-icon-width) + var(--Dropdown-x-padding));
 
+  color: inherit;
   font-family: inherit;
   font-size: var(--size-16);
+  font-weight: 500;
   background-color: var(--theme-color-bg-1);
   border: none;
   outline: none;
@@ -32,6 +36,5 @@
 }
 
 .Dropdown-item {
-  color: var(--theme-color-text-base);
   font-size: var(--size-16);
 }
